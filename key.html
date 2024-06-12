@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Altzin-PHP推箱子小游戏</title>
+        <link rel="icon" href="favicon.ico?v=9">
+        <style>
+            html, body
+            {
+                width: 100%;
+                height: 100%;
+            }
+            a:link {color:#0033ff;}
+            a:hover {color:#ffaa00;}
+            a:active {color:#00ff00;}
+        </style>
+
+        <script>console.info("meow!");</script>
+  <script>
+
+  function editable(){
+    if(document.body.contentEditable=="true"){
+    document.body.contentEditable='false'
+      document.designMode='off'
+      
+    }else{
+      document.body.contentEditable="true"
+      document.designMode='on'
+      
+    }
+  }
+  </script>
+    
+    <body background="paperang_000.jpg">
+
+    <h1 style="display:none">
+      <img src="favicon.ico" alt="icon"/>
+        这里是PHP推箱子小游戏,是Altzin制作的一个程序,欢迎使用!
+    </h1>
+    <h2>这里是PHP推箱子小游戏,是Altzin制作的一个程序,欢迎使用!</h2>
+<script>
+    document.addEventListener("keydown", function(event) {
+  console.log("按下的键码:", event.keyCode);
+    document.getElementById("1").src="http://localhost:8008/key.php?key="+event.keyCode
+});
+</script>
+
+<iframe src="" width="50%" height="30%" id="1">
+
+</iframe>
+<iframe src="http://localhost:8008/mapedit.php" style="display:none;" id="3">
+
+</iframe><br/>
+选中此浏览器窗口按方向键玩耍,如遇卡关刷新即可<br/>
+开发者提示:可在mapedit.php中修改关卡<br/>
+<button onclick="editable()">打开/关闭编辑网页</button>
+<noscript>
+  你的浏览器不能运行js<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+    AltzinWeb,AltzinWeb<br/>
+</noscript>
+<span style="display:none">
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+AltzinWeb,AltzinWeb
+</span>
+  
+</body>
+</html>
